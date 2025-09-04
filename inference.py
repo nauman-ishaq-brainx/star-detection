@@ -216,7 +216,7 @@ class YOLOInference:
         
         with torch.no_grad():
             predictions = self.model(input_imgs)
-        
+                
         final_pred = []
         for bbox_id in range(len(predictions)):
             if self.yolo_ver == 'v8':
